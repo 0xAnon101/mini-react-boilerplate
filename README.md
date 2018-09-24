@@ -6,3 +6,6 @@ config that provides enough for a small projectto work and requires little gradu
 I keep the minimal config exposed so anyone could analyse and study it, play with it, and improve it.
 I always change it on my own projects to be more specific. Adding this to the core package would only increase the complexity 
 quite a lot, and I want to keep it as minimal and functional as possible on the boilerplate.
+
+## What to do ?
+- Just clone the repo and do npm install
