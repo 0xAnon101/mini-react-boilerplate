@@ -20,7 +20,7 @@
     "sass",
     "css-modules",
     "wwebpack"
-,  ],
+  ],
   "author": "Raju Gautam rajugautam45@gmail.com",
   "license": "ISC",
   "devDependencies": {
