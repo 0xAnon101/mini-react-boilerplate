@@ -7,7 +7,7 @@
     "start": "SET NODE_ENV=development && webpack-dev-server --open --mode development --hot",
     "build": "SET NODE_ENV=production && webpack --mode production"
   },
-  "keywords": [],
+  "keywords": ["boilerplate","reactjs","react-boilerplate","frontend-app","webpack4","webpack4-boilerplate","webpack4-starter-kit","react-starter","react-starter-kit"],
   "author": "Raju Gautam rajugautam45@gmail.com",
   "license": "ISC",
   "devDependencies": {
