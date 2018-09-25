@@ -1,5 +1,6 @@
-# mini-react-boilerplate
-A custom react boilerplate , rather than create-react-app
+# minio-react-boilerplate
+A custom react boilerplate , rather than ```create-react-app```.
+
 Initially it was just a boilerplate that could be cloned and changed to jump-start a react application, with a basic and easy 
 config that provides enough for a small projectto work and requires little gradual tinkering to expand beyond the basics.
 
@@ -8,4 +9,4 @@ I always change it on my own projects to be more specific. Adding this to the co
 quite a lot, and I want to keep it as minimal and functional as possible on the boilerplate.
 
 ## What to do ?
-- Just clone the repo and do ```npm install```
+- Just clone the repo and do ```npm install``` and you will get a nice minimal boilerplate to code on and later on you can add your own loaders and plugins according to your application needs.

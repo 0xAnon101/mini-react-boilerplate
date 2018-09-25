@@ -1,5 +1,5 @@
 {
-  "name": "mini-react-boilerplate",
+  "name": "minio-react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "SET NODE_ENV=production && webpack --mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Raju Gautam rajugautam45@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^1.0.0",
