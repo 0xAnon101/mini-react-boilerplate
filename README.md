@@ -1,4 +1,4 @@
-# minio-react-boilerplate
+# react-mini-boilerplate
 A custom react boilerplate , rather than ```create-react-app```.
 
 Initially it was just a boilerplate that could be cloned and changed to jump-start a react application, with a basic and easy 

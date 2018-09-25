@@ -1,5 +1,5 @@
 {
-  "name": "minio-react-boilerplate",
+  "name": "react-mini-boilerplate",
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
@@ -11,12 +11,11 @@
     "boilerplate",
     "reactjs",
     "react-boilerplate",
-    "frontend-app",
+    "babel",
+    "hmr",
     "webpack4",
     "webpack4-boilerplate",
     "webpack4-starter-kit",
-    "react-starter",
-    "react-starter-kit",
     "sass",
     "css-modules",
     "wwebpack"
