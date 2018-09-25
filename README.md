@@ -1,5 +1,5 @@
 # react-mini-boilerplate
-A custom react boilerplate , rather than ```create-react-app```.
+A custom react boilerplate for creating your React Projects.
 
 Initially it was just a boilerplate that could be cloned and changed to jump-start a react application, with a basic and easy 
 config that provides enough for a small projectto work and requires little gradual tinkering to expand beyond the basics.
