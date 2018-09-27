@@ -10,3 +10,6 @@ quite a lot, and I want to keep it as minimal and functional as possible on the 
 
 ## What to do ?
 - Just clone the repo and do ```npm install``` and you will get a nice minimal boilerplate to code on and later on you can add your own loaders and plugins according to your application needs.
+
+## NPM
+https://www.npmjs.com/package/react-mini-boilerplate/
