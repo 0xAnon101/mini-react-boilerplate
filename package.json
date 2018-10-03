@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "SET NODE_ENV=development && webpack-dev-server --open --mode development --hot",
-    "build": "SET NODE_ENV=production && webpack --mode production"
+    "start": " webpack-dev-server --open --mode development --hot",
+    "build": " webpack --mode production"
   },
   "keywords": [
     "boilerplate",
