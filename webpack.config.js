@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const copyWebpackPlugin = require("copy-webpack-plugin");
 const Path = require("path");
 
 const miniCssPlugin = new MiniCssExtractPlugin({
@@ -12,6 +13,11 @@ const htmlPlugin = new HtmlWebPackPlugin({
   filename: "./index.html"
 });
 
+const copyPlugin = new copyWebpackPlugin({
+  from: "src/assets",
+  to: "dist/"
+});
+
 module.exports = (env, argv) => {
   return {
     optimization: {
@@ -21,7 +27,7 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.js$/,
-          exclude: /node_modules/,
+          exclude: /(node_modules|bower_components)/,
           use: {
             loader: "babel-loader"
           }
@@ -42,21 +48,34 @@ module.exports = (env, argv) => {
           ]
         },
         {
-          test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-          include: [Path.join(__dirname, "src/assets/")],
-          loader: "file-loader?name=assets/[name].[ext]"
-        },
-        {
-          test: /\.(png|jpg|gif)$/,
+          test: /\.(png|jpg|jp(e)g|gif|svg)$/i,
           use: [
             {
-              loader: "file-loader",
-              options: {}
+              loader: "url-loader",
+              options: {
+                limit: 8192
+              }
+            }
+          ]
+        },
+        {
+          test: /\.(ttf|eot|svg|jpg|jp(e)g|png|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+          use: [
+            {
+              loader: "file-loader?name=assets[name].[ext]",
+              options: {
+                name(file) {
+                  if (argv.mode === "development") {
+                    return "[path][name].[ext]";
+                  }
+                  return "[hash].[ext]";
+                }
+              }
             }
           ]
         }
       ]
     },
-    plugins: [htmlPlugin, miniCssPlugin]
+    plugins: [htmlPlugin, miniCssPlugin, copyPlugin]
   };
 };
