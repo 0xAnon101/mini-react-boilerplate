@@ -13,10 +13,12 @@ const htmlPlugin = new HtmlWebPackPlugin({
   filename: "./index.html"
 });
 
-const copyPlugin = new copyWebpackPlugin({
-  from: "src/assets",
-  to: "dist/"
-});
+const copyPlugin = new copyWebpackPlugin([
+  {
+    from: "src/assets",
+    to: "dist/"
+  }
+]);
 
 module.exports = (env, argv) => {
   return {
